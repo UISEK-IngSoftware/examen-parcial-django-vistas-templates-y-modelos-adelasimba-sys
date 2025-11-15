@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+  <head>
+    <title>Películas</title>
+    <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" />
+  </head>
+
+  <body class="bg-dark text-white">
+    <div class="container">
+
+      
+      <div class="text-center p-4" style="background-color:#F8C8DC; color:#000;">
+        <h1>Catalógo de Películas</h1>
+      </div>
+
+      {% block content %}
+      {% endblock %}
+
+    </div>
+  </body>
+</html>

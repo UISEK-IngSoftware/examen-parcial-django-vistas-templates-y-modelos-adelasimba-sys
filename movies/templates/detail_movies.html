@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+
+<h3>Detalles de la Película</h3>
+
+<ul class="list-group">
+  <li class="list-group-item bg-dark text-white">Título: {{ movie.title }}</li>
+  <li class="list-group-item bg-dark text-white">Género: {{ movie.genre }}</li>
+  <li class="list-group-item bg-dark text-white">Director: {{ movie.director }}</li>
+  <li class="list-group-item bg-dark text-white">Año: {{ movie.year_published }}</li>
+  <li class="list-group-item bg-dark text-white">Sinopsis: {{ movie.synopsis }}</li>
+</ul>
+
+
+{% endblock %}
+
+
+
+

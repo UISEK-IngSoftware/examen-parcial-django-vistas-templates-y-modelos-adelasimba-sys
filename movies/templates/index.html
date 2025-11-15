@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+
+<h3>Listado de Películas</h3>
+
+<ul class="list-group">
+  {% for movie in movies %}
+    <li class="list-group-item bg-dark text-white">
+      <a href="{% url 'movies:detail_movies' movie.id %}" class="text-white">
+        {{ movie.title }} - {{ movie.year_published }}
+      </a>
+    </li>
+  
+  {% endfor %}
+</ul>
+
+{% endblock %}
